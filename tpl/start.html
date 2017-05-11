@@ -1,0 +1,73 @@
+
+
+  <h1 class="start text-center"ng-click="jump('/main')">
+    三国杀武将商城
+  </h1>
+
+  <div class="container" id="start">
+    <div id="photoShow" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+
+        <!--<div class="item">-->
+          <!--<div ng-repeat="obj in imgList">-->
+          <!--<img ng-src="img/{{obj.imgUrl}}"width="100%">-->
+          <!--<div class="carousel-caption">-->
+            <!--<h5>{{obj.title}}</h5>-->
+            <!--<span>{{obj.des}}</span>-->
+          <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <div class="item active">
+
+          <div class="carousel-caption">
+            <h2 class="text-primary">顾曲周郎</h2>
+          </div>
+          <img src="img/banner1.jpg"class="img-responsive">
+        </div>
+
+        <div class="item">
+          <img src="img/banner2.jpg"class="img-responsive">
+          <div class="carousel-caption">
+            <h2 class="text-success">王者之师</h2>
+          </div>
+        </div>
+
+        <div class="item ">
+          <img src="img/banner3.jpg" class="img-responsive">
+          <div class="carousel-caption">
+            <h2 class="text-success">闭月羞花</h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/banner4.jpg"class="img-responsive">
+          <div class="carousel-caption">
+            <h2 class="text-info">经国大业</h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/banner5.jpg"class="img-responsive">
+          <div class="carousel-caption">
+            <h2 class="text-danger">伤逝无情</h2>
+          </div>
+        </div>
+
+      </div>
+      <a data-slide="prev" class="carousel-control left" href="javascript;#photoShow">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a data-slide="next" class="carousel-control right" href="javascript;#photoShow">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+
+      <ul class="carousel-indicators">
+        <li data-target="javascript;#photoShow" data-slide-to="0" class="active"></li>
+        <li data-target="javascript;#photoShow" data-slide-to="1"></li>
+        <li data-target="javascript;#photoShow" data-slide-to="2"></li>
+        <li data-target="javascript;#photoShow" data-slide-to="3"></li>
+        <li data-target="javascript;#photoShow" data-slide-to="4"></li>
+      </ul>
+    </div>
+  </div>
+

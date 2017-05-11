@@ -1,0 +1,74 @@
+
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="container">
+
+  <div class="form-group has-feedback search">
+    <input type="text"
+           class="form-control"
+           ng-model="kw"
+           placeholder="请输入武将名称或阵营名称或武将技能"
+      />
+    <span class="form-control-feedback glyphicon glyphicon-search"></span>
+  </div>
+
+  <div>
+    <div class="list-group">
+      <a href="#/detail/{{hero.hid}}"
+         ng-repeat="hero in heroList"
+         class="list-group-item"
+        >
+        <div class="media">
+          <div class="media-left media-middle">
+            <div class="small">
+              <img class="media-object" ng-src="img/{{hero.img_sm}}" alt=""/>
+              <div class="mask">
+                <!--<h5 class="text-success">知天意，逆天难</h5>-->
+                <h5 class="text-primary">{{hero.words}}</h5>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="media-body">
+            <h3>{{hero.name}}</h3>
+
+            <ul class="list-inline">
+              <li><h4>势力：</h4></li>
+              <li>{{hero.country}}</li>
+            </ul>
+
+            <ul class="list-inline">
+              <li><h4>体力值：</h4></li>
+              <li><img src="img/tl1.jpg" title="体力点数"class="img-responsive"/></li>
+              <li><img src="img/tl1.jpg" title="体力点数"class="img-responsive"/></li>
+              <li><img src="img/tl1.jpg" title="体力点数"class="img-responsive"/></li>
+            </ul>
+            <ul class="list-inline">
+              <li><h4>技能：</h4></li>
+              <li class="text-info">{{hero.skills}}</li>
+            </ul>
+            <ul class="list-inline">
+              <li><h4>价格:</h4></li>
+              <li class="text-danger">{{hero.price|currency:'￥'}}</li>
+            </ul>
+            <!--<p class="text-info">技能：{{hero.skills}}</p>-->
+            <!--<p class="text-danger">价格：{{hero.price|currency:'￥'}}</p>-->
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <button
+    ng-show="hasMore"
+    ng-click="loadMore()"
+    class="btn btn-success btn-block">
+    加载更多武将
+  </button>
+
+  <p ng-hide="hasMore" class="text-center text-warning">没有更多武将可以加载了，敬请期待更多的武将上线</p>
+
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

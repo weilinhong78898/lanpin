@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/sgs.min.js" />
+        <item url="file://$PROJECT_DIR$/js/angular.min.js" />
+        <item url="file://$PROJECT_DIR$/js/angular-route.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/sgs.min.js" />
+      <root url="file://$PROJECT_DIR$/js/angular.min.js" />
+      <root url="file://$PROJECT_DIR$/js/angular-route.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

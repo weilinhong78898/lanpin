@@ -1,0 +1,138 @@
+
+<div class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container">
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="http://www.sanguosha.com/">
+          <img src="img/logo1.jpg" style="margin-top:-15px;">
+        </a>
+        <a href="#/start" class="navbar-brand">三国杀</a>
+        <a class="navbar-toggle" data-toggle="collapse" href="javascript;#mymenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </div>
+
+    <div id="mymenu" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#/start">首页</a></li>
+        <li><a href="#/main">主页</a></li>
+        <li class="active dropdown">
+          <a data-toggle="dropdown" href="javascript;">菜单<span class="caret"></span></a>
+          <ul class="dropdown-menu list-unstyled">
+            <li><a href="#/start">官网首页</a></li>
+            <li class="divider"></li>
+            <li><a href="#">热门活动</a></li>
+            <li class="divider"></li>
+            <li><a href="#">玩家互动</a></li>
+            <li class="divider"></li>
+            <li><a href="#/main">购买武将</a></li>
+            <li class="divider"></li>
+            <li><a href="#">联系客服</a></li>
+            <li class="divider"></li>
+            <li><a href="#">关于我们</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a data-toggle="modal" href="javascript;#modal-register">注册</a>
+        </li>
+        <li>
+          <a href="javascript;"data-toggle="dropdown">登录</a>
+          <div class="dropdown-menu">
+            <div class="login-menu">
+              <!--登录表单-->
+              <form>
+                <div class="form-group">
+
+                  <label class="control-label text-primary" for="uname">用户名：</label>
+                  <input class="form-control" id="uname">
+                </div>
+                <div class="form-group">
+                  <label class="control-label text-primary" for="upwd">密码：</label>
+                  <input class="form-control" id="upwd">
+                </div>
+
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">10天之内不再登录
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input class="btn btn-success" type="button" value="登录">
+                  <input class="btn btn-danger" type="button" value="离开">
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <!--注册模态框-->
+    <div id="modal-register" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>欢迎注册三国杀会员</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-xs-2">
+                  <label class="control-label" for="uname1">用户名：</label>
+                </div>
+                <div class="col-xs-5">
+                  <input class="form-control" id="uname1" autofocus>
+                </div>
+                <div class="col-xs-5">
+                  <span class="help-block">用户名不能为空，可以包含数字、字母等</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-xs-2">
+                  <label class="control-label" for="upwd1">密码：</label>
+                </div>
+                <div class="col-xs-5">
+                  <input class="form-control" id="upwd1">
+                </div>
+                <div class="col-xs-5">
+                  <span class="help-block">密码长度在8~15位之间</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-xs-10 col-xs-offset-2">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">本人同意此协议
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-xs-10 col-xs-offset-2">
+                  <input class="btn btn-success" type="button" value="注册">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <a data-dismiss="modal" class="btn btn-danger"  href="javascript;#">关闭</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

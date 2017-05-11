@@ -1,0 +1,47 @@
+
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="container">
+
+  <ul class="breadcrumb">
+    <li>
+      <a href="#/main">列表页</a>
+    </li>
+    <li>详情页</li>
+  </ul>
+
+  <div class="panel panel-default">
+
+    <div class="panel-body">
+        <div class="page-header">
+          <h2>{{hero.name}}</h2>
+          <img class="img-responsive" ng-src="img/{{hero.img_lg}}" alt=""/>
+
+          <div class="text-justify" id="intro">
+            <span>所属阵营</span>——<p class="text-danger">{{hero.country}}</p>
+            <span>体力值</span>——
+            <ul class="list-inline">
+              <!--<li><h4>体力值：</h4></li>-->
+              <li><img src="img/tl1.jpg" title="体力为0时即阵亡"class="img-responsive"/></li>
+              <li><img src="img/tl1.jpg" title="体力为0时即阵亡"class="img-responsive"/></li>
+              <li><img src="img/tl1.jpg" title="体力为0时即阵亡"class="img-responsive"/></li>
+            </ul>
+            <!--<p class="text-danger">{{hero.country}}</p>-->
+            <span>武将简介</span>——<p class="text-info bg-danger">{{hero.detail}}</p>
+            <span>武将技能</span>——<p class="text-primary bg-info">{{hero.skills}}</p>
+            <span>武将价格</span>——<p class="text-danger">{{hero.price|currency:'￥'}}</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="panel-footer">
+      <div class="text-right">
+        <button ng-click="jump('/order/'+hero.hid)" class="btn btn-success">
+          订购武将
+        </button>
+        <button ng-click="jump('/main')" class="btn btn-primary">返回上级</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>
